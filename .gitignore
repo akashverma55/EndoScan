@@ -1,0 +1,68 @@
+# ==========================================
+# Endometrial Classification - .gitignore
+# ==========================================
+
+# ============ Python Backend ============
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Model files (too large for GitHub)
+*.pth
+*.pt
+models/*.pth
+models/*.pt
+
+# Training outputs & datasets
+*.npy
+*.npz
+data/
+dataset/
+Endometrial_Results/
+checkpoints/
+wandb/
+
+# ============ Flutter App ============
+# Build outputs
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+
+# iOS
+ios/Pods/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+
+# ============ General ============
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & API keys
+.env
+secrets.py
+api_keys.dart
+
+# Large files
+*.zip
+*.tar.gz
+
+# Logs
+*.log
