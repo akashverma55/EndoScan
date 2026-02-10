@@ -50,19 +50,19 @@ This project implements a robust medical image classification system for endomet
 </tr>
 <tr>
   <td width="33%" align="center">
-    <img src="screenshots/1.png" width="95%"/>
+    <img src="screenshots/1.png" width="75%"/>
     <br/>
     <h4>🏠 Home</h4>
     <p><i>Beautiful landing screen<br/>with easy navigation</i></p>
   </td>
   <td width="33%" align="center">
-    <img src="screenshots/2.png" width="95%"/>
+    <img src="screenshots/2.png" width="75%"/>
     <br/>
     <h4>📤 Upload</h4>
     <p><i>Image preview with<br/>instant feedback</i></p>
   </td>
   <td width="33%" align="center">
-    <img src="screenshots/3.png" width="95%"/>
+    <img src="screenshots/3.png" width="75%"/>
     <br/>
     <h4>✨ Results</h4>
     <p><i>Classification output with<br/>confidence percentages</i></p>
@@ -126,37 +126,37 @@ This project implements a robust medical image classification system for endomet
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        FLUTTER MOBILE APP                        │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
-│  │ Image Picker │  │  Beautiful   │  │   Results    │          │
-│  │   & Upload   │→ │     UI       │→ │  Display     │          │
-│  └──────────────┘  └──────────────┘  └──────────────┘          │
+│                        FLUTTER MOBILE APP                       │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │ Image Picker │  │  Beautiful   │  │   Results    │           │
+│  │   & Upload   │→ │     UI       │→ │  Display     │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
 └─────────────────────────────┬───────────────────────────────────┘
                               │ HTTP POST
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│                        FASTAPI BACKEND                           │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
-│  │   Image      │→ │ Preprocess   │→ │   Model      │          │
-│  │   Upload     │  │  Normalize   │  │  Inference   │          │
-│  └──────────────┘  └──────────────┘  └──────────────┘          │
+│                        FASTAPI BACKEND                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │   Image      │→ │ Preprocess   │→ │   Model      │           │
+│  │   Upload     │  │  Normalize   │  │  Inference   │           │
+│  └──────────────┘  └──────────────┘  └──────────────┘           │
 └─────────────────────────────┬───────────────────────────────────┘
                               │
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│                      ENSEMBLE PREDICTION                         │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐        │
-│  │ ResNet50 │  │ ConvNeXt │  │   Swin   │  │  MaxViT  │        │
-│  │  92.56%  │  │  92.72%  │  │  94.39%  │  │  80.73%  │        │
-│  └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘        │
+│                      ENSEMBLE PREDICTION                        │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐         │
+│  │ ResNet50 │  │ ConvNeXt │  │   Swin   │  │  MaxViT  │         │
+│  │  92.56%  │  │  92.72%  │  │  94.39%  │  │  80.73%  │         │
+│  └─────┬────┘  └─────┬────┘  └─────┬────┘  └─────┬────┘         │
 │        └─────────────┴─────────────┴─────────────┘              │
-│                           │                                      │
-│                    Average Probabilities                         │
-│                           │                                      │
-│                    ┌──────▼───────┐                              │
-│                    │   ENSEMBLE   │                              │
-│                    │    94.99%    │                              │
-│                    └──────────────┘                              │
+│                           │                                     │
+│                    Average Probabilities                        │
+│                           │                                     │
+│                    ┌──────▼───────┐                             │
+│                    │   ENSEMBLE   │                             │
+│                    │    94.99%    │                             │
+│                    └──────────────┘                             │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
