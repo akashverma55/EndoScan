@@ -49,20 +49,20 @@ This project implements a robust medical image classification system for endomet
   </td>
 </tr>
 <tr>
-  <td width="33%" align="center">
-    <img src="screenshots/1.png" width="75%"/>
+  <td align="center" valign="top">
+    <img src="screenshots/1.png" width="250"/>
     <br/>
     <h4>🏠 Home</h4>
     <p><i>Beautiful landing screen<br/>with easy navigation</i></p>
   </td>
-  <td width="33%" align="center">
-    <img src="screenshots/2.png" width="75%"/>
+  <td align="center" valign="top">
+    <img src="screenshots/2.png" width="250"/>
     <br/>
     <h4>📤 Upload</h4>
     <p><i>Image preview with<br/>instant feedback</i></p>
   </td>
-  <td width="33%" align="center">
-    <img src="screenshots/3.png" width="75%"/>
+  <td align="center" valign="top">
+    <img src="screenshots/3.png" width="250"/>
     <br/>
     <h4>✨ Results</h4>
     <p><i>Classification output with<br/>confidence percentages</i></p>
@@ -73,15 +73,18 @@ This project implements a robust medical image classification system for endomet
     <h3>🔬 TECHNICAL PIPELINE</h3>
   </td>
 </tr>
+</table>
+
+<table>
 <tr>
   <td width="50%" align="center">
-    <img src="screenshots/4.png" width="95%"/>
+    <img src="screenshots/4.png" width="100%"/>
     <br/>
     <h4>🔍 Image Processing</h4>
     <p><i>Watershed segmentation with boundary detection</i></p>
   </td>
   <td width="50%" align="center">
-    <img src="screenshots/5.png" width="95%"/>
+    <img src="screenshots/5.png" width="100%"/>
     <br/>
     <h4>📊 Model Performance</h4>
     <p><i>Confusion matrix showing 94.99% ensemble test accuracy</i></p>
